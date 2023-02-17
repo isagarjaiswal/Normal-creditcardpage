@@ -1,0 +1,212 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+position: relative;
+width: 100%;
+height: 100%;
+background: linear-gradient(to right bottom, rgb(112, 154, 218),rgb(71, 204, 219));
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+}
+.box{
+    width:100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.box-l{
+    position: absolute;
+    top: 5%;
+    left: 12.3%;
+    clip-path: polygon(0 0, 40% 0, 19% 100%, 0% 100%);
+    background-color: rgb(3, 105, 187);
+    width:100%;
+    height: 90%;
+}
+.box-r{
+    position: absolute;
+    width: 60%;
+    height: 90%;
+    clip-path: polygon(100% 0, 40% 0, 19% 100%, 100% 100%);
+    background-color: rgb(245, 250, 253);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+}
+.nav1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3% ;
+    padding-left: 3.5% ;
+    width: 13%;
+    height: 10%;
+    color: aliceblue;
+    font:500 90% "montserrat";
+}
+.card{
+    width: 30%;
+    height: 35%;
+    position: absolute;
+    left: 9%;
+    border-radius: 3%;
+    z-index: 1;
+    background:linear-gradient(to right,rgb(64, 222, 243),rgb(35, 185, 222),rgb(1, 148, 206)) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 1px 10px 20px rgb(0, 97, 164);
+
+}
+.card > nav {
+    padding-top: 12%;
+    width: 87%;
+    height: 2%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font: 900 24px "montserrat";
+    color: rgb(0, 97, 164);
+}
+.card > .chip{
+    width: 100%;
+    padding-left: 10%;
+  
+}
+.card > .chip > img{
+    width:60px;
+}
+.card > pre{
+    font: 500 150% "montserrat";
+    margin-bottom: 4%;
+}
+.card > .h1{
+    width: 100%;
+    display:flex;
+    justify-content:flex-start;
+    padding-left: 10%;
+    padding-bottom: 2%;
+    font: 500 85% "montserrat";    
+    
+}
+/* .box-r{
+    width: 100%;
+    height: ;
+    padding-left: 18%;
+    display: flex;
+    flex-direction: column;
+} */
+.box-r{
+    position: absolute;
+    width: 60%;
+    height: 90%;
+    padding-left: 18%;
+    clip-path: polygon(100% 0, 40% 0, 19% 100%, 100% 100%);
+    background-color: rgb(245, 250, 253);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* position: relative; */
+}
+.nav2{
+    font: 700 23px "montserrat";
+    color: rgb(1, 7, 19);
+}
+
+.cardholder{
+    width: 60%;
+    height: 7%;
+   border: none;
+   border-bottom: 2px solid black;
+   color: aliceblue;
+    font: 500 88% "montserrat";
+    padding-left:3%;
+ margin-bottom: -60px;
+
+}
+.number{
+    width: 60%;
+    height: 7%;
+   border: none;
+   border-bottom: 2px solid black;
+   color: aliceblue;
+   font: 500 88% "montserrat";
+    padding-left:3%;
+    margin-bottom: -60px;
+}
+.sub{
+    width: 60%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* /* .label{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; */
+
+.a{
+    /* width: 40%;  */
+   height: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    color: black;   
+    font: 500 88% "montserrat";
+    padding-left:3%;
+    margin-bottom: -60px;
+}
+.b{
+    /* width: 30%; */
+    height: 100%;
+    border: none;
+    border-bottom: 2px solid black;
+    color: black;
+    font: 500 88% "montserrat";
+    padding-left:3%;
+    margin-bottom: -60px;
+}
+.subb{
+    margin-top: -6vh;
+    width: 60%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    font: 500 90% "montserrat";
+}
+.subb> .chek{
+    width: 40px;
+    height: 1.5vmax;
+}
+
+.btn{
+    width: 40vh;
+    height: 7vh;
+    background-color: rgb(3, 105, 187);
+    font: 700 3vh "montserrat";
+    border-radius: 10px ;
+    color: aliceblue;
+    border: none;
+    position: absolute;
+    /* bottom: -2%; */
+    /* z-index: 999; */
+    bottom: 2%;
+    z-index: 1;
+    right: 34%;
+}
